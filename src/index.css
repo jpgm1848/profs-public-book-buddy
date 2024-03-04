@@ -1,0 +1,21 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #f8f8f8;
+}
+
+#logo-image {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Add your own custom styles here */
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px dodgerBlue;
+}
+
+form > * {
+  margin: 0.5rem;
+}
