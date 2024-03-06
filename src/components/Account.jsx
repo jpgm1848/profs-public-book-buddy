@@ -7,6 +7,7 @@ function Account({ auth }) {
   const navigate = useNavigate();
   const token = window.localStorage.getItem("token");
   const [reservations, setReservations] = useState({});
+  console.log(reservations);
 
   useEffect(() => {
     fetchReservations();
@@ -43,9 +44,16 @@ function Account({ auth }) {
         }
       );
       const json = await response.json();
-      setReservations(
-        reservations.reservation?.filter((book) => book.id !== id)
+      console.log(json);
+      const filtered = reservations.reservation?.filter(
+        (book) => book.id !== id
       );
+      console.log(filtered);
+      setReservations({ reservation: filtered });
+      // const filter = reservations.filter
+      // setReservations(
+      //   reservations.reservation?.filter((book) => book.id !== id)
+      // );
       return json;
     } catch (error) {
       console.error("Error deleting reservation:", error);
@@ -55,6 +63,7 @@ function Account({ auth }) {
   return (
     <>
       <div key={auth.id} className="profile-card">
+        <h2>User Information</h2>
         <p>
           {" "}
           Name: {auth.firstname} {auth.lastname}
