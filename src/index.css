@@ -12,7 +12,7 @@ body {
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border: solid 1px dodgerBlue;
 }
 
@@ -20,11 +20,31 @@ form > * {
   margin: 0.5rem;
 }
 
+.search-label {
+  text-decoration: underline;
+}
+
+.books-title {
+  display: flex;
+  justify-content: center;
+}
+
+.all-books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid 4px black;
+  margin: 20px;
+  padding: 10px;
+}
+
 .book-card {
   border: solid 2px lightblue;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
+  width: 400px;
 }
 
 .book-card img {

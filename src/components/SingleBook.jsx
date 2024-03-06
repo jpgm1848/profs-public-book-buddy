@@ -43,7 +43,7 @@ function SingleBook({ books }) {
         <h4>{book.author}</h4>
         <img src={book.coverimage} alt={`An image of ${book.title}`} />
         <br />
-        <button onClick={() => navigate(`/`)}>All Books</button>
+        <button onClick={() => navigate(`/books`)}>All Books</button>
         <button onClick={() => reserve()}>Reserve this book</button>
       </div>
     </>
