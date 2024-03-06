@@ -54,7 +54,7 @@ function Account({ auth }) {
 
   return (
     <>
-      <div key={auth.id} className="book-card">
+      <div key={auth.id} className="profile-card">
         <p>
           {" "}
           Name: {auth.firstname} {auth.lastname}

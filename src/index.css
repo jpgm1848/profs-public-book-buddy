@@ -38,6 +38,12 @@ form > * {
   margin: 20px;
   padding: 10px;
 }
+.profile-card {
+  border: solid 6px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
 
 .book-card {
   border: solid 2px lightblue;
