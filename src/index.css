@@ -1,6 +1,6 @@
 body {
   font-family: Georgia, serif;
-  background-color: #f8f8f8;
+  background-color: antiquewhite;
 }
 
 #logo-image {
@@ -18,4 +18,47 @@ form {
 
 form > * {
   margin: 0.5rem;
+}
+
+.book-card {
+  border: solid 2px lightblue;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.book-card img {
+  max-width: 300px;
+}
+
+.book-card button {
+  background-color: grey;
+  margin: 10px;
+}
+
+.single-book {
+  border: solid 2px lightblue;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.single-book img {
+  max-width: 300px;
+}
+
+.single-book button {
+  background-color: grey;
+  margin: 10px;
+}
+
+nav {
+  background-color: dodgerBlue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: cornSilk;
 }
